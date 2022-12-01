@@ -7,9 +7,9 @@ const {
 
 module.exports = {
   name: {
-    "": "webpack-userscript-template",
-    cn: "中文名",
-    en: "english name",
+    "": "Monkey Note",
+    cn: "大圣便笺",
+    en: "Monkey Note",
   },
   namespace: "https://trim21.me/",
   version: version,
@@ -20,7 +20,7 @@ module.exports = {
   require: [
     `https://cdn.jsdelivr.net/npm/jquery@${dependencies.jquery}/dist/jquery.min.js`,
   ],
-  grant: ["GM.xmlHttpRequest"],
+  grant: ["GM.xmlHttpRequest", "GM.registerMenuCommand"],
   connect: ["httpbin.org"],
   "run-at": "document-end",
 };
